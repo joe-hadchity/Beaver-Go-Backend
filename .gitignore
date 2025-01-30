@@ -1,0 +1,34 @@
+# Create .gitignore with essential rules for Go
+@"
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+/bin/
+
+# Test binary
+*.test
+
+# Dependency directories
+vendor/
+/go/pkg/
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.idea/
+.vscode/
+
+# Database files
+*.db
+*.sqlite
+
+# Log files
+*.log
+
+# Build files
+/build/
+"@ | Out-File -Encoding utf8 .gitignore
